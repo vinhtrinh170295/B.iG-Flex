@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B.iG FLEX | Pausez. Reportez. Économisez.</title>
+    <meta name="description" content="L'Internet conçu pour la Gen Z. 16,99€/mois. Pausez 2 mois gratuitement. Reportez vos gigas inutilisés. Prix bloqué 24 mois." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Inter"', 'sans-serif'],
+            },
+            colors: {
+              electric: {
+                blue: '#0055AA', // Slightly deeper, more corporate blue (Bouygues-ish)
+                purple: '#9D4EDD',
+              },
+              neon: {
+                pink: '#E6007E', // Magenta close to standard telecom highlights
+                green: '#00C853',
+              },
+              brand: {
+                gold: '#FFD700',
+                navy: '#0F172A', // Darker navy
+                dark: '#0B1120',
+                light: '#F8FAFC',
+              }
+            },
+            backgroundImage: {
+              'hero-gradient': 'linear-gradient(135deg, #0055AA 0%, #9D4EDD 100%)',
+              'soft-blue': 'linear-gradient(180deg, #F0F9FF 0%, #FFFFFF 100%)',
+              'soft-green': 'linear-gradient(180deg, #F0FDF4 0%, #FFFFFF 100%)',
+              'soft-purple': 'linear-gradient(180deg, #FAF5FF 0%, #FFFFFF 100%)',
+              'hot-gradient': 'linear-gradient(90deg, #E6007E 0%, #9D4EDD 100%)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #FFFFFF;
+        color: #0F172A;
+        overflow-x: hidden;
+      }
+      .text-gradient {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(90deg, #0055AA, #9D4EDD);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.0",
+    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.7",
+    "three": "https://aistudiocdn.com/three@^0.181.1",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.553.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
